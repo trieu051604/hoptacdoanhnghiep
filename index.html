@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Khám phá cơ hội thực tập, Fresher, việc làm toàn thời gian và các chương trình tuyển dụng cùng FPT University Quy Nhơn.">
+  <meta name="theme-color" content="#f37021">
+  <title>Cơ hội nghề nghiệp — FPT University Quy Nhơn</title>
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/manrope-vietnamese.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/career.css?v=20261016-5">
+  <script type="module" src="assets/js/career.js?v=20261016-5"></script>
+</head>
+<body>
+  <!-- Content module only. The existing WordPress theme supplies its header/footer. -->
+  <main id="fpt-qn-career">
+    <a class="qn-skip-link" href="#jobs">Đi đến cơ hội mới nhất</a>
+
+    <section class="qn-intro" aria-labelledby="qn-intro-title">
+      <img class="qn-hero-image" src="assets/images/hero/career-banner-v2.webp" alt="Ảnh minh họa sinh viên áo cam và khuôn viên đại học" width="2172" height="724" fetchpriority="high" decoding="async">
+      <div class="qn-container">
+        <div class="qn-hero-copy">
+          <p class="qn-eyebrow">CƠ HỘI NGHỀ NGHIỆP</p>
+          <h1 id="qn-intro-title">Bắt đầu sự nghiệp<br><span>từ đây.</span></h1>
+          <p class="qn-intro-description">Khám phá cơ hội thực tập, Fresher, toàn thời gian<br class="qn-desktop-break"> và các chương trình tuyển dụng dành cho sinh viên<br class="qn-desktop-break"> FPT University Quy Nhơn.</p>
+          <form class="qn-search" role="search" aria-label="Tìm thông tin tuyển dụng">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg>
+            <label class="qn-sr-only" for="qn-job-search">Tìm kiếm vị trí, doanh nghiệp, kỹ năng</label>
+            <input id="qn-job-search" type="search" placeholder="Tìm kiếm vị trí, doanh nghiệp, kỹ năng…" autocomplete="off" maxlength="120">
+            <button class="qn-search-button" type="submit">Tìm kiếm</button>
+          </form>
+        </div>
+      </div>
+      <p class="qn-hero-slogan" aria-hidden="true">Kiến tạo<br><span>tương lai cùng bạn</span></p>
+    </section>
+
+    <section id="jobs" class="qn-jobs" aria-labelledby="qn-jobs-title" tabindex="-1">
+      <div class="qn-container">
+        <div class="qn-list-heading">
+          <div><h2 id="qn-jobs-title">CƠ HỘI MỚI NHẤT</h2><p class="qn-list-subtitle">Khám phá những cơ hội việc làm phù hợp với bạn.</p></div>
+          <div class="qn-list-controls">
+            <p class="qn-results-count" data-qn-results role="status" aria-live="polite" aria-atomic="true"></p>
+            <div class="qn-select-field">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <label class="qn-sr-only" for="qn-location">Lọc theo địa điểm</label>
+              <select id="qn-location" data-qn-location><option value="all">Tất cả địa điểm</option></select>
+            </div>
+            <div class="qn-select-field">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16 M4 12h16 M4 17h16 M8 4v16 M16 4v16"/></svg>
+              <label class="qn-sr-only" for="qn-sort">Sắp xếp cơ hội</label>
+              <select id="qn-sort" data-qn-sort><option value="newest">Mới nhất</option><option value="oldest">Cũ nhất</option><option value="company">Doanh nghiệp A–Z</option></select>
+            </div>
+          </div>
+        </div>
+        <div class="qn-job-list" id="qn-job-list" data-qn-jobs></div>
+        <nav class="qn-pagination" aria-label="Phân trang thông tin tuyển dụng" data-qn-pagination hidden></nav>
+      </div>
+    </section>
+
+    <section class="qn-partners" aria-labelledby="qn-partners-title" data-qn-partner-section>
+      <div class="qn-container">
+        <h2 id="qn-partners-title">DOANH NGHIỆP ĐỒNG HÀNH</h2>
+        <p class="qn-list-subtitle">Cơ hội từ những doanh nghiệp uy tín cùng sinh viên FPT University.</p>
+        <div class="qn-partner-carousel">
+          <button class="qn-carousel-button" type="button" data-qn-partner-direction="-1" aria-label="Doanh nghiệp trước" aria-controls="qn-partner-track" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 5-7 7 7 7"/></svg></button>
+          <div class="qn-partner-track" id="qn-partner-track" data-qn-partners tabindex="0" role="region" aria-label="Logo doanh nghiệp đồng hành" aria-live="off"></div>
+          <button class="qn-carousel-button" type="button" data-qn-partner-direction="1" aria-label="Doanh nghiệp tiếp theo" aria-controls="qn-partner-track"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 5 7 7-7 7"/></svg></button>
+        </div>
+        
+      </div>
+    </section>
+
+    <dialog class="qn-dialog" aria-labelledby="qn-dialog-title" data-qn-dialog>
+      <div class="qn-dialog-toolbar"><span class="qn-eyebrow">THÔNG TIN TUYỂN DỤNG</span><button type="button" class="qn-icon-button" data-qn-close aria-label="Đóng cửa sổ chi tiết"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12 M18 6 6 18"/></svg></button></div>
+      <div class="qn-dialog-content" data-qn-dialog-content></div>
+    </dialog>
+    <noscript><p class="qn-container qn-empty-state">Vui lòng bật JavaScript để xem thông tin tuyển dụng trong bản prototype.</p></noscript>
+  </main>
+</body>
+</html>

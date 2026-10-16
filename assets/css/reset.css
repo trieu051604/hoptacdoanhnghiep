@@ -1,0 +1,15 @@
+/* Module-only reset. Does not change the WordPress header, footer or body. */
+#fpt-qn-career,
+#fpt-qn-career *,
+#fpt-qn-career *::before,
+#fpt-qn-career *::after { box-sizing: border-box; }
+#fpt-qn-career :where(h1, h2, h3, h4, p, ul, ol, figure) { margin: 0; padding: 0; color: inherit; font-family: inherit; font-style: normal; text-transform: none; }
+#fpt-qn-career :where(button, input) { font: inherit; }
+#fpt-qn-career :where(button, a, input) { -webkit-tap-highlight-color: transparent; }
+#fpt-qn-career :where(button) { cursor: pointer; }
+#fpt-qn-career :where(a) { color: inherit; text-decoration: none; }
+#fpt-qn-career :where(img) { display: block; max-width: 100%; }
+#fpt-qn-career :where(svg) { display: block; width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+#fpt-qn-career :where([hidden]) { display: none !important; }
+#fpt-qn-career :where(button, input, dialog) { color: inherit; }
+#fpt-qn-career :where(button) { border: 0; background: transparent; }

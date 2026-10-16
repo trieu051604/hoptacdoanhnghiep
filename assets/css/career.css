@@ -1,0 +1,130 @@
+/* Career landing page: all selectors remain inside the WordPress module. */
+#fpt-qn-career .qn-intro { position: relative; min-height: 420px; overflow: hidden; background: #fff3e8; }
+#fpt-qn-career .qn-hero-image { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 15%; }
+#fpt-qn-career .qn-hero-copy { position: relative; z-index: 1; width: min(720px, 60%); padding-block: 40px 38px; }
+#fpt-qn-career .qn-hero-copy > .qn-eyebrow { color: #b63f00; font-size: 12px; letter-spacing: .2px; }
+#fpt-qn-career .qn-intro h1 { margin-block: 12px 14px; font-size: clamp(38px, 4.4vw, 56px); font-weight: 800; line-height: 1.05; letter-spacing: -1.7px; color: #101210; }
+#fpt-qn-career .qn-intro h1 span { color: #d8580b; }
+#fpt-qn-career .qn-intro-description { max-width: 495px; color: #292c29; font-size: 15px; line-height: 1.55; }
+#fpt-qn-career .qn-hero-slogan { position: absolute; z-index: 1; right: max(32px, calc((100% - 1240px) / 2)); bottom: 25px; color: #fff; font: italic 700 21px/1.4 "Segoe Print", cursive; text-align: right; text-shadow: 0 1px 3px #14212b; transform: rotate(-7deg); }
+#fpt-qn-career .qn-hero-slogan span { color: #ffc482; }
+#fpt-qn-career .qn-search { display: flex; align-items: center; gap: 12px; width: 100%; min-height: 58px; margin-top: 20px; padding: 4px 4px 4px 20px; border: 1px solid #fff; border-radius: 999px; background: #fff; box-shadow: 0 5px 20px rgb(184 105 39 / 8%); }
+#fpt-qn-career .qn-search > svg { flex: 0 0 21px; width: 21px; height: 21px; color: var(--qn-action); }
+#fpt-qn-career .qn-search input { width: 100%; min-width: 0; height: 44px; padding: 0; border: 0; border-radius: 3px; background: transparent; font-size: 12px; }
+#fpt-qn-career .qn-search input::placeholder { color: var(--qn-text-secondary); opacity: 1; }
+#fpt-qn-career .qn-search-button { flex-shrink: 0; min-height: 48px; padding: 10px 30px; border-radius: 999px; background: var(--qn-action); color: #fff; font-size: 13px; font-weight: 800; }
+#fpt-qn-career .qn-search-button:hover { background: var(--qn-action-hover); }
+#fpt-qn-career .qn-jobs { padding-block: 36px 42px; scroll-margin-top: 24px; background: #fff; }
+#fpt-qn-career .qn-list-heading { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 20px; }
+#fpt-qn-career .qn-list-heading h2, #fpt-qn-career .qn-partners h2 { color: #111; font-size: 27px; line-height: 1.3; font-weight: 800; letter-spacing: -.85px; }
+#fpt-qn-career .qn-list-subtitle { margin-top: 5px; color: #555b57; font-size: 13px; line-height: 1.6; }
+#fpt-qn-career .qn-list-controls { display: flex; align-items: center; justify-content: flex-end; gap: 12px; flex-wrap: wrap; }
+#fpt-qn-career .qn-results-count { color: var(--qn-text-secondary); font-size: 12px; white-space: nowrap; }
+#fpt-qn-career .qn-results-count strong { color: var(--qn-action); font-weight: 700; }
+#fpt-qn-career .qn-select-field { position: relative; display: flex; align-items: center; gap: 8px; min-width: 166px; min-height: 44px; padding-left: 13px; border: 1px solid var(--qn-border); border-radius: 14px; background: #fff; }
+#fpt-qn-career .qn-select-field > svg { flex: 0 0 17px; width: 17px; height: 17px; }
+#fpt-qn-career .qn-select-field::after { position: absolute; right: 13px; top: 16px; width: 7px; height: 7px; content: ""; transform: rotate(45deg); border-right: 1px solid #7e8580; border-bottom: 1px solid #7e8580; pointer-events: none; }
+#fpt-qn-career .qn-select-field select { width: 100%; min-width: 0; min-height: 42px; padding: 7px 30px 7px 0; border: 0; border-radius: 8px; background: transparent; color: var(--qn-text); font: inherit; font-size: 12px; appearance: none; cursor: pointer; }
+#fpt-qn-career .qn-job-list { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); align-items: stretch; gap: 20px; }
+#fpt-qn-career .qn-job-item { display: flex; flex-direction: column; min-width: 0; overflow: hidden; border: 1px solid #e8e9e8; border-radius: 11px; background: #fff; transition: transform var(--qn-transition), box-shadow var(--qn-transition); }
+#fpt-qn-career .qn-job-item:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgb(28 40 54 / 7%); }
+#fpt-qn-career .qn-job-item .qn-media { width: 100%; aspect-ratio: 1.78; flex-shrink: 0; }
+#fpt-qn-career .qn-job-item:hover .qn-media img { transform: scale(1.035); }
+#fpt-qn-career .qn-card-published { position: absolute; top: 12px; left: 12px; display: inline-flex; align-items: center; gap: 5px; max-width: calc(100% - 24px); padding: 3px 11px; border-radius: 999px; background: #ffac32; color: #512900; font-size: 10px; font-weight: 800; line-height: 1.7; overflow-wrap: anywhere; }
+#fpt-qn-career .qn-card-published svg { flex: 0 0 12px; width: 12px; height: 12px; }
+#fpt-qn-career .qn-job-content { position: relative; display: flex; flex: 1; flex-direction: column; min-width: 0; padding: 0 15px 12px; }
+#fpt-qn-career .qn-company-row { display: flex; align-items: flex-end; gap: 10px; min-height: 43px; margin-top: -17px; margin-bottom: 11px; }
+#fpt-qn-career .qn-company-logo { display: flex; align-items: center; justify-content: center; flex: 0 0 48px; width: 48px; height: 43px; padding: 7px 5px; border-radius: 9px 9px 0 0; background: #fff; }
+#fpt-qn-career .qn-company-logo img { width: 100%; height: 100%; object-fit: contain; }
+#fpt-qn-career .qn-card-company { min-width: 0; padding-bottom: 1px; color: #111; font-size: 12px; font-weight: 800; line-height: 1.5; overflow-wrap: anywhere; }
+#fpt-qn-career .qn-job-item h3 { color: #111; font-size: 16px; font-weight: 800; letter-spacing: -.3px; line-height: 1.5; -webkit-line-clamp: 2; }
+#fpt-qn-career .qn-job-item h3 a:hover { color: var(--qn-action); }
+#fpt-qn-career .qn-job-excerpt { min-height: 57px; margin-top: 7px; margin-bottom: 12px; color: #595e5a; font-size: 12px; line-height: 1.6; -webkit-line-clamp: 3; }
+#fpt-qn-career .qn-job-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 13px; margin-top: auto; color: #575d59; font-size: 11px; line-height: 1.6; }
+#fpt-qn-career .qn-job-meta > span { display: inline-flex; align-items: center; gap: 5px; min-width: 0; overflow-wrap: anywhere; }
+#fpt-qn-career .qn-job-meta svg { flex: 0 0 14px; width: 14px; height: 14px; }
+#fpt-qn-career .qn-job-item > .qn-text-link { justify-content: flex-start; gap: 7px; min-height: 39px; margin: 0 15px 14px; padding: 8px 12px; border: 1px solid #e7e9e6; border-radius: 11px; color: var(--qn-action); font-size: 12px; }
+#fpt-qn-career .qn-job-item > .qn-text-link:hover { background: var(--qn-orange-light); border-color: #f2c7ad; }
+#fpt-qn-career .qn-job-item > .qn-text-link > span[aria-hidden] { font-size: 17px; line-height: 1; }
+#fpt-qn-career .qn-job-item a:focus-visible { outline-offset: -3px; border-radius: 3px; }
+#fpt-qn-career .qn-pagination { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 7px; margin-top: 20px; }
+#fpt-qn-career .qn-page-button { position: relative; display: inline-flex; align-items: center; justify-content: center; flex: 0 0 42px; width: 42px; height: 42px; padding: 0; border-radius: 50%; color: #222; font-size: 14px; font-weight: 500; line-height: 1; isolation: isolate; }
+#fpt-qn-career .qn-page-button::before { position: absolute; inset: 3px; z-index: -1; content: ""; border: 1px solid #dee2de; border-radius: 50%; background: #fff; transition: border-color var(--qn-transition), background var(--qn-transition); }
+#fpt-qn-career .qn-page-button:hover::before { border-color: var(--qn-primary); background: var(--qn-orange-light); }
+#fpt-qn-career .qn-page-button[aria-current="page"] { color: #fff; font-size: 19px; font-weight: 700; }
+#fpt-qn-career .qn-page-button[aria-current="page"]::before { border-color: #e96219; background: #e96219; }
+#fpt-qn-career .qn-page-button:disabled { color: #a1a6a1; cursor: default; }
+#fpt-qn-career .qn-page-button:disabled::before { background: #fff; border-color: #e5e8e3; }
+#fpt-qn-career .qn-page-button svg { width: 17px; height: 17px; stroke-width: 1.6; }
+#fpt-qn-career .qn-partners { padding-block: 30px 27px; background: #fdf7f2; }
+#fpt-qn-career .qn-partner-carousel { display: flex; align-items: center; gap: 20px; margin-top: 22px; }
+#fpt-qn-career .qn-carousel-button { display: flex; align-items: center; justify-content: center; flex: 0 0 38px; width: 38px; height: 38px; padding: 0; border: 1px solid #dce1dc; border-radius: 50%; background: #fff; color: #455048; }
+#fpt-qn-career .qn-carousel-button svg { width: 18px; height: 18px; }
+#fpt-qn-career .qn-carousel-button:hover:not(:disabled) { color: var(--qn-action); border-color: var(--qn-action); }
+#fpt-qn-career .qn-carousel-button:disabled { color: #a3aaa4; cursor: default; }
+#fpt-qn-career .qn-partner-track { position: relative; display: grid; grid-auto-flow: column; grid-auto-columns: calc((100% - 98px) / 8); gap: 14px; width: 100%; min-width: 0; overflow-x: auto; padding: 0; scroll-snap-type: none; scrollbar-width: none; overflow-anchor: none; }
+#fpt-qn-career .qn-partner-track::-webkit-scrollbar { display: none; }
+#fpt-qn-career .qn-partner { display: flex; align-items: center; justify-content: center; height: 68px; min-width: 0; padding: 12px; border: 1px solid #e4e6e1; border-radius: 11px; background: #fff; scroll-snap-align: start; }
+#fpt-qn-career .qn-partner img { width: 100%; height: 100%; object-fit: contain; }
+#fpt-qn-career .qn-partner:focus-visible { outline-offset: -3px; }
+#fpt-qn-career .qn-partner-with-name { gap: 7px; }
+#fpt-qn-career .qn-partner-with-name img { width: 30px; height: 38px; flex-shrink: 0; }
+#fpt-qn-career .qn-partner-name { font-size: 15px; font-weight: 800; line-height: 1.2; letter-spacing: -.6px; }
+#fpt-qn-career .qn-partner[data-qn-brand="tpbank"] .qn-partner-name { color: #62269a; }
+#fpt-qn-career .qn-partner[data-qn-brand="shopee"] .qn-partner-name { color: #c84124; }
+#fpt-qn-career .qn-partner[data-qn-brand="unilever"] { flex-direction: column; gap: 0; }
+#fpt-qn-career .qn-partner[data-qn-brand="unilever"] img { width: 30px; height: 35px; }
+#fpt-qn-career .qn-partner[data-qn-brand="unilever"] .qn-partner-name { color: #1f36a2; font-size: 10px; letter-spacing: 0; }
+#fpt-qn-career .qn-partners .qn-data-note { margin-top: 14px; color: #6c706b; font-size: 10px; }
+#fpt-qn-career .qn-job-list .qn-empty-state { margin-top: 8px; }
+@media (max-width: 1199px) {
+  #fpt-qn-career .qn-hero-copy { width: 66%; }
+  #fpt-qn-career .qn-job-list { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+  #fpt-qn-career .qn-list-heading { align-items: flex-start; flex-direction: column; gap: 17px; }
+  #fpt-qn-career .qn-list-controls { justify-content: flex-start; width: 100%; }
+  #fpt-qn-career .qn-partner-track { grid-auto-columns: calc((100% - 70px) / 6); }
+}
+@media (max-width: 899px) {
+  #fpt-qn-career .qn-hero-slogan { display: none; }
+  #fpt-qn-career .qn-intro { min-height: 440px; }
+  #fpt-qn-career .qn-hero-image { object-position: 58% center; opacity: .55; }
+  #fpt-qn-career .qn-intro::after { position: absolute; inset: 0; content: ""; background: linear-gradient(90deg, #fff3e8 15%, rgb(255 243 232 / 87%) 55%, rgb(255 243 232 / 10%)); }
+  #fpt-qn-career .qn-hero-copy { z-index: 2; width: 88%; }
+  #fpt-qn-career .qn-job-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #fpt-qn-career .qn-partner-track { grid-auto-columns: calc((100% - 42px) / 4); }
+}
+@media (max-width: 599px) {
+  #fpt-qn-career .qn-intro { display: flex; flex-direction: column; min-height: 0; background: #fff3e8; }
+  #fpt-qn-career .qn-intro::after { display: none; }
+  #fpt-qn-career .qn-hero-image { position: relative; inset: auto; order: 2; width: 100%; height: 190px; opacity: 1; object-fit: cover; object-position: right center; }
+  #fpt-qn-career .qn-intro > .qn-container { order: 1; }
+  #fpt-qn-career .qn-hero-copy { width: 100%; padding-block: 27px 22px; }
+  #fpt-qn-career .qn-intro h1 { font-size: 38px; letter-spacing: -1.2px; line-height: 1.1; }
+  #fpt-qn-career .qn-intro-description { font-size: 13px; line-height: 1.7; }
+  #fpt-qn-career .qn-desktop-break { display: none; }
+  #fpt-qn-career .qn-search { gap: 8px; min-height: 52px; padding-left: 12px; margin-top: 17px; }
+  #fpt-qn-career .qn-search input { font-size: 10px; height: 40px; }
+  #fpt-qn-career .qn-search > svg { width: 17px; height: 17px; flex-basis: 17px; }
+  #fpt-qn-career .qn-search-button { min-height: 42px; padding-inline: 14px; font-size: 11px; }
+  #fpt-qn-career .qn-jobs { padding-block: 29px 30px; }
+  #fpt-qn-career .qn-list-heading h2, #fpt-qn-career .qn-partners h2 { font-size: 23px; letter-spacing: -.6px; }
+  #fpt-qn-career .qn-list-subtitle { font-size: 12px; }
+  #fpt-qn-career .qn-list-controls { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  #fpt-qn-career .qn-results-count { grid-column: 1 / -1; font-size: 12px; }
+  #fpt-qn-career .qn-select-field { min-width: 0; padding-left: 10px; gap: 6px; }
+  #fpt-qn-career .qn-select-field select { font-size: 10px; padding-right: 24px; }
+  #fpt-qn-career .qn-select-field::after { right: 10px; }
+  #fpt-qn-career .qn-job-list { grid-template-columns: 1fr; gap: 18px; }
+  #fpt-qn-career .qn-job-item .qn-media { aspect-ratio: 1.8; }
+  #fpt-qn-career .qn-job-item h3 { font-size: 18px; min-height: 27px; }
+  #fpt-qn-career .qn-job-excerpt { font-size: 13px; min-height: 62px; }
+  #fpt-qn-career .qn-job-meta { font-size: 12px; }
+  #fpt-qn-career .qn-card-company { font-size: 13px; }
+  #fpt-qn-career .qn-card-published { font-size: 11px; }
+  #fpt-qn-career .qn-job-item > .qn-text-link { min-height: 44px; font-size: 13px; }
+  #fpt-qn-career .qn-partners { padding-block: 26px; }
+  #fpt-qn-career .qn-partner-carousel { gap: 8px; margin-top: 16px; }
+  #fpt-qn-career .qn-carousel-button { flex-basis: 32px; width: 32px; height: 32px; }
+  #fpt-qn-career .qn-partner-track { grid-auto-columns: calc((100% - 10px) / 2); gap: 10px; }
+  #fpt-qn-career .qn-partner { height: 65px; padding: 10px; }
+}
