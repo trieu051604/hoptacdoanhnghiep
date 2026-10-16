@@ -149,7 +149,6 @@ import { createPartnerCarousel } from './partner-carousel.js?v=20261016-4';
           <div class="qn-dialog-meta"><span class="qn-tag">${escape(kind === 'recruitmentPrograms' ? labels.program : labels[record.category] || record.category || 'Tuyển dụng')}</span>${dateMarkup(record.publishedDate)}${record.company ? `<span>${escape(record.company)}</span>` : ''}${record.location ? `<span>${escape(record.location)}</span>` : ''}</div>
           <p>${escape(record.excerpt || 'Thông tin đang được cập nhật.')}</p>
           ${list('Mô tả công việc', record.responsibilities)}${list('Yêu cầu', record.requirements)}${list('Kỹ năng', record.skills)}
-          <p class="qn-dialog-disclosure">Nội dung minh họa của bản prototype. Vị trí, lịch trình và điều kiện cần được xác nhận bằng thông tin chính thức trước khi đăng ký hoặc ứng tuyển.</p>
           <a class="qn-button qn-button-outline" href="#jobs" data-qn-dialog-anchor>Về danh sách tuyển dụng <span aria-hidden="true">→</span></a>`;
         dialog.showModal();
         query('[data-qn-close]').focus();

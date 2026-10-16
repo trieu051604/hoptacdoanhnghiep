@@ -30,7 +30,6 @@
 #fpt-qn-career .qn-dialog-content li { margin-block: 6px; overflow-wrap: anywhere; }
 #fpt-qn-career .qn-dialog-image { width: 100%; height: 240px; border-radius: var(--qn-radius-sm); object-fit: cover; background: var(--qn-bg-light); }
 #fpt-qn-career .qn-dialog-meta { display: flex; flex-wrap: wrap; gap: 12px; color: var(--qn-text-secondary); font-size: 12px; }
-#fpt-qn-career .qn-dialog-disclosure { padding: 14px 16px; border-radius: var(--qn-radius-sm); background: var(--qn-orange-light); font-size: 12px; }
 @media (max-width: 767px) {
   #fpt-qn-career .qn-container { width: calc(100% - 40px); }
   #fpt-qn-career .qn-dialog { padding: 20px; }
